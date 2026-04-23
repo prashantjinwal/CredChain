@@ -68,8 +68,8 @@ button {
 }
 
 .page-shell {
-  margin: 16px;
-  border-radius: 32px;
+  /* margin: 16px; */
+  /* border-radius: 32px; */
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(248, 241, 255, 0.95));
   box-shadow:

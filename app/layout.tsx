@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Providers } from "@/providers";
+
 
 const brandSans = Space_Grotesk({
   variable: "--font-brand-sans",
@@ -25,11 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
+      <html
       lang="en"
       className={`${brandSans.variable} ${brandMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <Providers>{children}</Providers>
+        </body>
+
     </html>
+
   );
 }

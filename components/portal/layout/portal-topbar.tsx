@@ -1,4 +1,5 @@
 import { BellIcon, SearchIcon } from "@/components/shared/icons";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export function PortalTopbar() {
   return (
@@ -24,6 +25,10 @@ export function PortalTopbar() {
         >
           <BellIcon className="h-5 w-5" />
         </button>
+        <div
+       >
+            <ConnectButton/>
+        </div>
         <div className="flex items-center gap-3 rounded-2xl border border-[color:var(--line)] bg-white px-3 py-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl brand-gradient text-sm font-semibold text-white">
             AP
